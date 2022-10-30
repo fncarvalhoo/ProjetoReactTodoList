@@ -51,6 +51,14 @@ export const Container = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: white;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+  }
+  .button:active {
+    opacity: 0.6;
   }
 `;
 
@@ -70,7 +78,7 @@ export const Spacer = styled.div`
 export const Item = styled.li`
   padding: 13px 10px 13px 24px;
   width: 354px;
-  height: 50px;
+  min-height: 50px;
   background: ${(props) => (props.checked ? "green" : "white")};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -78,6 +86,7 @@ export const Item = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   p {
     font-weight: 500;
@@ -85,6 +94,11 @@ export const Item = styled.li`
     line-height: 24px;
     text-decoration-line: ${(props) => (props.checked ? "#line-through" : "")};
     color: ${(props) => (props.checked ? "white" : "green")};
+
+    width: 80%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   button {
