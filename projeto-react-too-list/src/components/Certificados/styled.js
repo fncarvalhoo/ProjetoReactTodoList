@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AreaHeader = styled.div`
+export const Container = styled.div`
     background-color: green;
     color: black;
 

@@ -24,7 +24,7 @@ export const Container = styled.div`
 
     li{
         list-style: none;
-        margin-left: 20px;
+        margin-left: 60px;
         margin-top: 0px;
         a{
             text-decoration: none;
