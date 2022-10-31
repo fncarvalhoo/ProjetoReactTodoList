@@ -17,7 +17,7 @@ export function About() {
                 );
             case "Skills":
                 return (
-                    <div>
+                    <div class="skills">
                     <h1>Linguagens:
                     <br/>
                     <img class="icon" src={"https://cdn-icons-png.flaticon.com/512/226/226777.png"} alt="Imagem Java"/>
@@ -41,7 +41,7 @@ export function About() {
             case "Contatos":
                 return (
                     <div id='contatos'>
-                    <a href='https://www.linkedin.com/in/fernando-carvalho-93a971241/' target="_blank"><img id="imagemContato" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Imagem Linkedin"></img></a>
+                    <a href='https://www.linkedin.com/in/fernando-carvalho-b143b2255/' target="_blank"><img id="imagemContato" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Imagem Linkedin"></img></a>
                     <br/>
                     <a href="https://www.instagram.com/fncarvalho_/" target="_blank"><img id="imagemContato" src='https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white' alt="Imagem Instagram"></img></a>
                     <br/>
@@ -71,7 +71,7 @@ export function About() {
                     <span onClick={() => setSelected("Sobre")}>Sobre</span>
                     <span onClick={() => setSelected("Skills")}>Skills</span>
                     <span onClick={() => setSelected("Contatos")}>Contatos</span>
-                    <span onClick={() => setSelected("Portfólio")}>Portfólio</span>
+                    <span onClick={() => setSelected("Portfólio")}>Github</span>
                 </header>
                 {selectedContent()}
 

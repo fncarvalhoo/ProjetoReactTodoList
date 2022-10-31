@@ -44,6 +44,7 @@ export const Content = styled.div`
 
   .sobreTexto {
     text-align: justify;
+    margin: 60px;
     font-size: 20px;
     padding-top: 50px;
     padding-right: 300px;
@@ -70,6 +71,7 @@ export const Content = styled.div`
 
   #contatos{
     text-align: center;
+    margin: 60px;
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: 0px 0px 17px 0px #9a85d6;
@@ -77,6 +79,10 @@ export const Content = styled.div`
     border-radius: 0px;
     color: black;
     
+  }
+
+  .skills{
+    margin: 60px;
   }
 
   #imagemContato{
@@ -105,5 +111,5 @@ export const Content = styled.div`
 `;
 export const Footer = styled.div`
   height: 100px;
-  background-color: black;
+  background-color: ;
 `;

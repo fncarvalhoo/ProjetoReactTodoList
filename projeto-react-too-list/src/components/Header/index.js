@@ -11,15 +11,17 @@ export function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Início</Link>
+              <Link to="/Sobre">Início</Link>
             </li>
             <li>
-              <Link to="/Sobre">Sobre</Link>
+              <Link to="/Projetos">Projetos</Link>
             </li>
             <li>
               <Link to="/Certificados">Certificados</Link>
             </li>
-            <li>Sair</li>
+            <li>
+              <Link to="/Sobre">Sobre</Link>
+            </li>
           </ul>
         </nav>
       </Container>
