@@ -3,26 +3,25 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   min-height: 859px;
-  background: rgba(0, 0, 0, 0.1);
+  background: #2f3139;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 12px 25px;
 
   .title {
-    font-weight: 600;
-    font-size: 48px;
+    margin-top: 20px;
+    font-size: 60px;
     line-height: 72px;
-    color: green;
+    color: #9a85d6;
   }
 
   .input {
     padding: 8px 24px;
     width: 224px;
     height: 50px;
-    background: #ffffff;
+    background: #e0e0e0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
@@ -30,20 +29,20 @@ export const Container = styled.div`
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: green;
+    color: #9a85d6;
   }
 
   .input::placeholder {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: green;
+    color: #9a85d6;
   }
 
   .button {
     width: 112px;
     height: 50px;
-    background-color: green;
+    background-color: #9a85d6;
     border-radius: 10px;
     border: none;
 
@@ -79,7 +78,7 @@ export const Item = styled.li`
   padding: 13px 10px 13px 24px;
   width: 354px;
   min-height: 50px;
-  background: ${(props) => (props.checked ? "green" : "white")};
+  background: ${(props) => (props.checked ? "#9a85d6" : "#E0e0e0")};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   list-style: none;
@@ -93,7 +92,7 @@ export const Item = styled.li`
     font-size: 16px;
     line-height: 24px;
     text-decoration-line: ${(props) => (props.checked ? "#line-through" : "")};
-    color: ${(props) => (props.checked ? "white" : "green")};
+    color: ${(props) => (props.checked ? "white" : "#9a85d6")};
 
     width: 80%;
     overflow-wrap: break-word;
@@ -109,12 +108,13 @@ export const Item = styled.li`
 
   button:hover {
     opacity: 0.8;
+    
   }
   button:active {
     opacity: 0.6;
   }
   i {
     font-size: 24px;
-    color: ${(props) => (props.checked ? "white" : "green")};
+    color: ${(props) => (props.checked ? "white" : "#9a85d6")};
   }
 `;
