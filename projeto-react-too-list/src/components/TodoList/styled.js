@@ -117,6 +117,15 @@ export const Item = styled.li`
   }
   i {
     font-size: 24px;
-    color: ${(props) => (props.checked ? "white" : "#9a85d6")};
+    color: ${(props) => (props.checked ? "white" : "#9a85d6")}; 
+  }
+  #lixeira:hover{
+    background-color: red;
+    border-radius: 99px;
+  }
+
+  #concluido:hover{
+    background-color: green;
+    border-radius: 99px;
   }
 `;
