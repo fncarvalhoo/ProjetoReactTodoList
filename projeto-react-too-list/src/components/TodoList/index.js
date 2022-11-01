@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Container, Flex, Item, Spacer } from "./styled";
 
-
 export function Formulario() {
   const [tarefa, setTarefa] = useState("");
   const [listTarefa, setListTarefa] = useState([]);
 
-  
   const addTarefa = () => {
     if (!tarefa) return alert("Preencha o campo");
     const newTarefa = {
