@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Container, Flex, Item, Spacer } from "./styled";
 
-
 export function Formulario() {
   const [tarefa, setTarefa] = useState("");
   const [listTarefa, setListTarefa] = useState([]);
 
-  
   const addTarefa = () => {
     if (!tarefa) return alert("Preencha o campo");
     const newTarefa = {
@@ -33,7 +31,7 @@ export function Formulario() {
 
   return (
     <Container>
-      <h1 className="title">TODO LIST</h1>
+      <h1 className="title">TO DO LIST</h1>
       <Spacer />
       <Flex direction="row" justify>
         <input
@@ -56,10 +54,10 @@ export function Formulario() {
                 <button
                   onClick={() => toggleChecked(tarefa.id, tarefa.checked)}
                 >
-                  <i class="bx bx-check "></i>
+                  <i id="concluido"class="bx bx-check "></i>
                 </button>
                 <button onClick={() => removeTarefa(tarefa.id)}>
-                  <i class="bx bx-trash "></i>
+                  <i id="lixeira" class="bx bx-trash "></i>
                 </button>
               </Flex>
             </Item>

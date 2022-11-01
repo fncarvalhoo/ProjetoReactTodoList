@@ -79,6 +79,9 @@ export const Item = styled.li`
   width: 354px;
   min-height: 50px;
   background: ${(props) => (props.checked ? "#9a85d6" : "#E0e0e0")};
+  text-decoration: ${(props) => (props.checked ? "line-through" : "none")};
+  text-decoration-color: white;
+  text-decoration-thickness: 2px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   list-style: none;
@@ -108,13 +111,21 @@ export const Item = styled.li`
 
   button:hover {
     opacity: 0.8;
-    
   }
   button:active {
     opacity: 0.6;
   }
   i {
     font-size: 24px;
-    color: ${(props) => (props.checked ? "white" : "#9a85d6")};
+    color: ${(props) => (props.checked ? "white" : "#9a85d6")}; 
+  }
+  #lixeira:hover{
+    background-color: red;
+    border-radius: 99px;
+  }
+
+  #concluido:hover{
+    background-color: green;
+    border-radius: 99px;
   }
 `;
